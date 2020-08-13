@@ -1,21 +1,16 @@
 package AbstractFactory;
 
-import AbstractFactory.HyunCar.HyunFactory;
-import AbstractFactory.abst.Body;
-import AbstractFactory.abst.CarFactory;
-import AbstractFactory.abst.Handle;
-import AbstractFactory.abst.Wheel;
+
+import AbstractFactory.abstFactory.BenzFactory;
+import AbstractFactory.abstFactory.CarFactory;
+import AbstractFactory.abstFactory.HyunDaeFactory;
+import AbstractFactory.beans.Car;
 
 public class make {
     public static void main(String[] args){
-        CarFactory factory = new HyunFactory();
 
-        Body body = factory.createBody();
-        Wheel wheel = factory.createWheel();
-        Handle handle = factory.createHandle();
+        Car hyundae = CarFactory.createCar(new HyunDaeFactory("comos", "gumho", "hyundae"));
 
-        System.out.println(body.getClass());
-        System.out.println(wheel.getClass());
-        System.out.println(handle.getClass());
+        Car benz = CarFactory.createCar(new BenzFactory("benz", "Michelin", "lg"));
     }
 }
