@@ -6,6 +6,7 @@ import AbstractFactory.abstFactory.CarFactory;
 import AbstractFactory.abstFactory.HyunDaeFactory;
 import AbstractFactory.beans.Car;
 
+// client
 public class make {
     public static void main(String[] args){
 
