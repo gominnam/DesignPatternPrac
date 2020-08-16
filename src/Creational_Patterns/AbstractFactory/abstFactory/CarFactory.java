@@ -1,6 +1,6 @@
-package AbstractFactory.abstFactory;
+package Creational_Patterns.AbstractFactory.abstFactory;
 
-import AbstractFactory.beans.Car;
+import Creational_Patterns.AbstractFactory.beans.Car;
 
 public interface CarFactory {
     public static Car createCar(CarAbstractFactory caf){

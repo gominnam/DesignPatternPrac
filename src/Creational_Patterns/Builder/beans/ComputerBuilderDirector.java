@@ -1,4 +1,4 @@
-package Builder.beans;
+package Creational_Patterns.Builder.beans;
 
 public class ComputerBuilderDirector {
 

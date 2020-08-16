@@ -1,4 +1,4 @@
-package Builder.beans;
+package Creational_Patterns.Builder.beans;
 
 public class Computer {
 
@@ -9,6 +9,7 @@ public class Computer {
     private boolean GraphicsCardEnable;
     private boolean BlueToothEnable;
 
+    //init
     private Computer(Builder builder) {
         this.RAM = builder.RAM;
         this.HDD = builder.HDD;
@@ -37,7 +38,7 @@ public class Computer {
         return BlueToothEnable;
     }
 
-    public static class Builder{
+    public static class Builder{ // concrete builder
         private String RAM;
         private String HDD;
         private String CPU;
@@ -64,8 +65,6 @@ public class Computer {
         public Computer build(){
             return new Computer(this);
         }
-
-
     }
 
 }

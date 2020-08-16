@@ -1,4 +1,4 @@
-package AbstractFactory.beans;
+package Creational_Patterns.AbstractFactory.beans;
 
 public interface Car {
     public String getHandle();

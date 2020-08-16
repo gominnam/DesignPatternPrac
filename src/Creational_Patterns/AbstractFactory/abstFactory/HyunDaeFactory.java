@@ -1,7 +1,7 @@
-package AbstractFactory.abstFactory;
+package Creational_Patterns.AbstractFactory.abstFactory;
 
-import AbstractFactory.beans.Car;
-import AbstractFactory.beans.HyunDaeCar;
+import Creational_Patterns.AbstractFactory.beans.Car;
+import Creational_Patterns.AbstractFactory.beans.HyunDaeCar;
 
 public class HyunDaeFactory implements CarAbstractFactory {
     private String Body;
