@@ -1,8 +1,8 @@
 package Creational_Patterns.Singleton;
 
 public class Singleton {
-    // volatile AND synchronized are used for MultiThread
-    private static volatile Singleton instance = null;
+    // volatile AND synchronized are used for MultiThread secure
+    private static volatile Singleton instance = null; // volatile is saving variable in main memory
 
     private Singleton(){};
 
