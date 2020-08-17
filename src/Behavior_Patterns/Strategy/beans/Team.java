@@ -2,7 +2,7 @@ package Behavior_Patterns.Strategy.beans;
 
 public abstract class Team {
     private String teamName;
-    private TeamStrategy teamStrategy;
+    private TeamStrategy teamStrategy; // strategy references
 
     public String getTeamName() {
         return teamName;
@@ -25,6 +25,5 @@ public abstract class Team {
     public void playGame(){
         teamStrategy.play(teamName);
     }
-
 
 }
