@@ -13,7 +13,7 @@ public class Client {
         ca.addAcount(new DepositAccount("DA02", 180));
         ca.addAcount(new SavingAccount("SA03", 200));
 
-        float totalBalance = ca.getTotalBalance();
+        float totalBalance = ca.getBalance();
         System.out.println("Total Balance : " + totalBalance);
 
     }

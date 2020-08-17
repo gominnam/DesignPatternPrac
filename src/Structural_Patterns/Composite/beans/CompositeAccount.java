@@ -3,11 +3,12 @@ package Structural_Patterns.Composite.beans;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeAccount {
+public class CompositeAccount extends Account{
     private float totalBalance;
     private List<Account> accountList = new ArrayList<Account>();
 
-    public float getTotalBalance(){
+    @Override
+    public float getBalance() {
         totalBalance = 0;
         for(Account f : accountList){
             totalBalance = totalBalance + f.getBalance();
