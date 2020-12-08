@@ -1,5 +1,5 @@
 package Behavior_Patterns.TemplateMethod.beans;
-
+//template method
 public abstract class Beverage {
 
     public final void prepare() {
@@ -20,5 +20,5 @@ public abstract class Beverage {
     protected void addWaterToCup(){
         System.out.println("Adding water to cup");
     }
-
 }
+
