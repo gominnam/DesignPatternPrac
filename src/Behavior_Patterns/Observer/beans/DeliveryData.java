@@ -12,6 +12,7 @@ public class DeliveryData implements Subject{
         this.observers = new ArrayList<>();
     }
 
+
     @Override
     public void register(Observer obj) {
         observers.add(obj);
