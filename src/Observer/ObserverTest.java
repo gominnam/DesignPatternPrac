@@ -10,9 +10,9 @@ public class ObserverTest {
         koNewspaper.attach(concreteSubscriber2);
         koNewspaper.attach(concreteSubscriber3);
 
-        koNewspaper.setMessage("Ko is the best");
+        koNewspaper.setMessage("first message");
 
         koNewspaper.detach(concreteSubscriber2);
-        koNewspaper.setMessage("Ko is the best");
+        koNewspaper.setMessage("second message");
     }
 }
