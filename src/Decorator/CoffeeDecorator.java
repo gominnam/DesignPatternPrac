@@ -1,7 +1,7 @@
 package Decorator;
 
 public class CoffeeDecorator implements ICoffee{
-    protected ICoffee decoratedCoffee;
+    private final ICoffee decoratedCoffee;
 
     public CoffeeDecorator(ICoffee decoratedCoffee) {
         this.decoratedCoffee = decoratedCoffee;
